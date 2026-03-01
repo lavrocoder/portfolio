@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Marketplace -->
+  <rect x="20" y="170" width="130" height="70" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="85" y="200" text-anchor="middle" fill="#e2e8f0" font-size="12">Маркетплейс</text>
+  <text x="85" y="218" text-anchor="middle" fill="#ef4444" font-size="10">Client App</text>
+
+  <line x1="150" y1="205" x2="200" y2="205" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- Payment Gateway -->
+  <rect x="200" y="145" width="170" height="120" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="2"/>
+  <text x="285" y="188" text-anchor="middle" fill="#e2e8f0" font-size="13">Payment Gateway</text>
+  <text x="285" y="206" text-anchor="middle" fill="#94a3b8" font-size="10">FastAPI</text>
+  <text x="285" y="224" text-anchor="middle" fill="#94a3b8" font-size="10">Strategy Pattern</text>
+  <text x="285" y="242" text-anchor="middle" fill="#ef4444" font-size="10">Idempotent API</text>
+  <text x="285" y="257" text-anchor="middle" fill="#94a3b8" font-size="9">Split Logic</text>
+
+  <line x1="370" y1="205" x2="420" y2="205" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- Provider Adapters -->
+  <rect x="420" y="130" width="150" height="150" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="495" y="170" text-anchor="middle" fill="#e2e8f0" font-size="13">Adapters</text>
+  <rect x="435" y="180" width="120" height="22" rx="4" fill="#0a1010" stroke="#ef4444" stroke-width="0.5"/>
+  <text x="495" y="195" text-anchor="middle" fill="#fca5a5" font-size="10">ЮKassa</text>
+  <rect x="435" y="210" width="120" height="22" rx="4" fill="#0a1010" stroke="#ef4444" stroke-width="0.5"/>
+  <text x="495" y="225" text-anchor="middle" fill="#fca5a5" font-size="10">Тинькофф</text>
+  <rect x="435" y="240" width="120" height="22" rx="4" fill="#0a1010" stroke="#ef4444" stroke-width="0.5"/>
+  <text x="495" y="255" text-anchor="middle" fill="#fca5a5" font-size="10">СБП</text>
+
+  <line x1="570" y1="205" x2="620" y2="205" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- PostgreSQL -->
+  <rect x="620" y="160" width="130" height="90" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="685" y="200" text-anchor="middle" fill="#e2e8f0" font-size="13">PostgreSQL</text>
+  <text x="685" y="218" text-anchor="middle" fill="#94a3b8" font-size="10">Transactions</text>
+  <text x="685" y="234" text-anchor="middle" fill="#ef4444" font-size="10">Audit log</text>
+
+  <!-- Redis -->
+  <rect x="420" y="320" width="150" height="60" rx="8" fill="#1a0808" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="495" y="350" text-anchor="middle" fill="#e2e8f0" font-size="13">Redis</text>
+  <text x="495" y="368" text-anchor="middle" fill="#f59e0b" font-size="10">Idempotency keys</text>
+
+  <line x1="495" y1="280" x2="495" y2="320" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arr)" opacity="0.5"/>
+
+  <!-- Webhook -->
+  <rect x="760" y="155" width="120" height="100" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+  <text x="820" y="195" text-anchor="middle" fill="#94a3b8" font-size="12">Webhooks</text>
+  <text x="820" y="213" text-anchor="middle" fill="#ef4444" font-size="10">Status sync</text>
+  <text x="820" y="231" text-anchor="middle" fill="#94a3b8" font-size="10">Reconciliation</text>
+
+  <line x1="750" y1="205" x2="760" y2="205" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+</svg>

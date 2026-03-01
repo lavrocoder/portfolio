@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Telegram User -->
+  <rect x="20" y="170" width="120" height="70" rx="8" fill="#1a0f30" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="80" y="200" text-anchor="middle" fill="#e2e8f0" font-size="12">Telegram</text>
+  <text x="80" y="218" text-anchor="middle" fill="#a78bfa" font-size="10">Покупатель</text>
+
+  <line x1="140" y1="205" x2="190" y2="205" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- aiogram Bot -->
+  <rect x="190" y="150" width="150" height="110" rx="8" fill="#1a0f30" stroke="#a78bfa" stroke-width="2"/>
+  <text x="265" y="190" text-anchor="middle" fill="#e2e8f0" font-size="13">aiogram Bot</text>
+  <text x="265" y="208" text-anchor="middle" fill="#94a3b8" font-size="10">Каталог / Корзина</text>
+  <text x="265" y="226" text-anchor="middle" fill="#94a3b8" font-size="10">Checkout Flow</text>
+  <text x="265" y="244" text-anchor="middle" fill="#a78bfa" font-size="10">Python</text>
+
+  <line x1="340" y1="205" x2="390" y2="205" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- Django REST -->
+  <rect x="390" y="150" width="150" height="110" rx="8" fill="#1a0f30" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="465" y="190" text-anchor="middle" fill="#e2e8f0" font-size="13">Django REST</text>
+  <text x="465" y="208" text-anchor="middle" fill="#94a3b8" font-size="10">Товары / Заказы</text>
+  <text x="465" y="226" text-anchor="middle" fill="#94a3b8" font-size="10">Admin Panel</text>
+  <text x="465" y="244" text-anchor="middle" fill="#a78bfa" font-size="10">DRF</text>
+
+  <line x1="540" y1="205" x2="590" y2="205" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- PostgreSQL -->
+  <rect x="590" y="165" width="120" height="80" rx="8" fill="#1a0f30" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="650" y="200" text-anchor="middle" fill="#e2e8f0" font-size="13">PostgreSQL</text>
+  <text x="650" y="218" text-anchor="middle" fill="#a78bfa" font-size="10">Products/Orders</text>
+
+  <!-- YooKassa -->
+  <rect x="390" y="310" width="150" height="70" rx="8" fill="#1a0f30" stroke="#10b981" stroke-width="1.5"/>
+  <text x="465" y="342" text-anchor="middle" fill="#e2e8f0" font-size="13">ЮKassa</text>
+  <text x="465" y="360" text-anchor="middle" fill="#10b981" font-size="10">Payments API</text>
+
+  <!-- Redis -->
+  <rect x="590" y="300" width="120" height="70" rx="8" fill="#1a0f30" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="650" y="332" text-anchor="middle" fill="#e2e8f0" font-size="13">Redis</text>
+  <text x="650" y="350" text-anchor="middle" fill="#f59e0b" font-size="10">Sessions</text>
+
+  <!-- Arrows to bottom components -->
+  <line x1="465" y1="260" x2="465" y2="310" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+  <line x1="650" y1="245" x2="650" y2="300" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- HR Manager notification -->
+  <rect x="730" y="155" width="140" height="80" rx="8" fill="#1a0f30" stroke="#8b5cf6" stroke-width="1" opacity="0.8"/>
+  <text x="800" y="188" text-anchor="middle" fill="#94a3b8" font-size="12">Менеджер</text>
+  <text x="800" y="206" text-anchor="middle" fill="#a78bfa" font-size="10">Уведомления</text>
+  <text x="800" y="222" text-anchor="middle" fill="#a78bfa" font-size="10">Статусы</text>
+
+  <line x1="540" y1="195" x2="730" y2="195" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="5,3" opacity="0.4"/>
+</svg>

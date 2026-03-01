@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0a1a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Simplified avatar: circle head + body -->
+  <circle cx="200" cy="155" r="70" fill="#2a4a6f"/>
+  <circle cx="200" cy="155" r="58" fill="#1a3a5f"/>
+  <!-- Eyes -->
+  <circle cx="178" cy="148" r="8" fill="#22d3ee" opacity="0.7"/>
+  <circle cx="222" cy="148" r="8" fill="#22d3ee" opacity="0.7"/>
+  <!-- Smile -->
+  <path d="M178 172 Q200 188 222 172" stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Body -->
+  <ellipse cx="200" cy="330" rx="90" ry="60" fill="#2a4a6f"/>
+  <!-- Collar -->
+  <path d="M160 275 L200 295 L240 275" fill="#1a3a5f"/>
+  <!-- Code bracket decoration -->
+  <text x="50" y="80" fill="#22d3ee" font-size="28" opacity="0.3" font-family="monospace">&lt;/&gt;</text>
+  <text x="300" y="370" fill="#22d3ee" font-size="22" opacity="0.25" font-family="monospace">{ }</text>
+</svg>

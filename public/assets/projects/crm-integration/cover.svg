@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a0a"/>
+      <stop offset="100%" stop-color="#040c04"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#10b981" stroke-width="0.5" opacity="0.06">
+    <line x1="0" y1="75" x2="800" y2="75"/><line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/><line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+  <!-- CRM box -->
+  <rect x="80" y="220" width="180" height="100" rx="12" fill="#0a2010" stroke="#10b981" stroke-width="1.5" opacity="0.9"/>
+  <text x="170" y="258" text-anchor="middle" fill="#34d399" font-size="15" font-weight="600" font-family="sans-serif">Bitrix24</text>
+  <text x="170" y="278" text-anchor="middle" fill="#6b7280" font-size="11" font-family="sans-serif">CRM</text>
+  <rect x="100" y="290" width="70" height="8" rx="4" fill="#10b981" opacity="0.3"/>
+  <rect x="100" y="306" width="50" height="6" rx="3" fill="#10b981" opacity="0.2"/>
+  <!-- Integration service (center) -->
+  <circle cx="400" cy="280" r="70" fill="#0a2010" stroke="#10b981" stroke-width="2" opacity="0.9"/>
+  <text x="400" y="272" text-anchor="middle" fill="#34d399" font-size="13" font-weight="600" font-family="sans-serif">Integration</text>
+  <text x="400" y="292" text-anchor="middle" fill="#6b7280" font-size="11" font-family="sans-serif">Microservice</text>
+  <text x="400" y="310" text-anchor="middle" fill="#10b981" font-size="10" font-family="monospace" opacity="0.7">FastAPI</text>
+  <!-- 1C box -->
+  <rect x="540" y="220" width="180" height="100" rx="12" fill="#0a2010" stroke="#34d399" stroke-width="1.5" opacity="0.9"/>
+  <text x="630" y="258" text-anchor="middle" fill="#34d399" font-size="15" font-weight="600" font-family="sans-serif">1С</text>
+  <text x="630" y="278" text-anchor="middle" fill="#6b7280" font-size="11" font-family="sans-serif">ERP</text>
+  <rect x="550" y="290" width="70" height="8" rx="4" fill="#10b981" opacity="0.3"/>
+  <rect x="550" y="306" width="50" height="6" rx="3" fill="#10b981" opacity="0.2"/>
+  <!-- Connection arrows -->
+  <line x1="260" y1="270" x2="330" y2="270" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+  <polygon points="325,264 335,270 325,276" fill="#10b981" opacity="0.6"/>
+  <line x1="470" y1="270" x2="540" y2="270" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+  <polygon points="535,264 545,270 535,276" fill="#10b981" opacity="0.6"/>
+  <!-- Queue (bottom) -->
+  <rect x="300" y="410" width="200" height="60" rx="10" fill="#0a2010" stroke="#10b981" stroke-width="1" opacity="0.7"/>
+  <text x="400" y="436" text-anchor="middle" fill="#34d399" font-size="12" font-family="sans-serif">RabbitMQ Queue</text>
+  <text x="400" y="456" text-anchor="middle" fill="#6b7280" font-size="10" font-family="sans-serif">Async sync events</text>
+  <!-- Vertical connector -->
+  <line x1="400" y1="350" x2="400" y2="410" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+  <!-- Success indicators -->
+  <circle cx="100" cy="150" r="8" fill="#10b981" opacity="0.2"/>
+  <text x="100" y="155" text-anchor="middle" fill="#10b981" font-size="10">✓</text>
+  <circle cx="700" cy="150" r="8" fill="#10b981" opacity="0.2"/>
+  <text x="700" y="155" text-anchor="middle" fill="#10b981" font-size="10">✓</text>
+  <circle cx="400" cy="500" r="3" fill="#10b981" opacity="0.3"/>
+</svg>

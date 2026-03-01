@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a20"/>
+      <stop offset="100%" stop-color="#04040f"/>
+    </linearGradient>
+    <linearGradient id="uptime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="95%" stop-color="#10b981"/>
+      <stop offset="95%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#6366f1" stroke-width="0.5" opacity="0.06">
+    <line x1="0" y1="75" x2="800" y2="75"/><line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/><line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+  <!-- Terminal/dashboard mockup -->
+  <rect x="80" y="100" width="640" height="360" rx="14" fill="#08080f" stroke="#6366f1" stroke-width="1.5" opacity="0.9"/>
+  <!-- Terminal header -->
+  <rect x="80" y="100" width="640" height="36" rx="14" fill="#0f0f20"/>
+  <rect x="80" y="114" width="640" height="22" fill="#0f0f20"/>
+  <circle cx="106" cy="118" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="126" cy="118" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="146" cy="118" r="6" fill="#10b981" opacity="0.8"/>
+  <text x="400" y="123" text-anchor="middle" fill="#4b5563" font-size="12" font-family="monospace">monitor.py — Monitoring Dashboard</text>
+  <!-- Status list -->
+  <g font-family="monospace" font-size="13">
+    <text x="110" y="168" fill="#10b981">● </text><text x="130" y="168" fill="#6b7280">site1.example.com</text><text x="450" y="168" fill="#10b981">200 OK</text><text x="580" y="168" fill="#4b5563">98ms</text>
+    <text x="110" y="192" fill="#10b981">● </text><text x="130" y="192" fill="#6b7280">shop.example.com</text><text x="450" y="192" fill="#10b981">200 OK</text><text x="580" y="192" fill="#4b5563">124ms</text>
+    <text x="110" y="216" fill="#ef4444">● </text><text x="130" y="216" fill="#6b7280">api.client3.ru</text><text x="450" y="216" fill="#ef4444">503 ERROR</text><text x="580" y="216" fill="#ef4444">—</text>
+    <text x="110" y="240" fill="#10b981">● </text><text x="130" y="240" fill="#6b7280">crm.client4.com</text><text x="450" y="240" fill="#10b981">200 OK</text><text x="580" y="240" fill="#4b5563">87ms</text>
+    <text x="110" y="264" fill="#10b981">● </text><text x="130" y="264" fill="#6b7280">landing.client5.ru</text><text x="450" y="264" fill="#10b981">200 OK</text><text x="580" y="264" fill="#4b5563">210ms</text>
+    <text x="110" y="288" fill="#f59e0b">● </text><text x="130" y="288" fill="#6b7280">portal.client6.ru</text><text x="450" y="288" fill="#f59e0b">SLOW</text><text x="580" y="288" fill="#f59e0b">2340ms</text>
+  </g>
+  <!-- Uptime bar -->
+  <text x="110" y="340" fill="#4b5563" font-size="11" font-family="monospace">Uptime 30d:</text>
+  <rect x="220" y="326" width="480" height="18" rx="9" fill="#1a1a2e"/>
+  <rect x="220" y="326" width="456" height="18" rx="9" fill="url(#uptime)"/>
+  <text x="706" y="340" fill="#6b7280" font-size="11" font-family="monospace">95%</text>
+  <!-- Alert notification -->
+  <rect x="500" y="400" width="220" height="60" rx="10" fill="#2a0a0a" stroke="#ef4444" stroke-width="1" opacity="0.9"/>
+  <text x="610" y="426" text-anchor="middle" fill="#ef4444" font-size="12" font-family="sans-serif" font-weight="600">🚨 Alert</text>
+  <text x="610" y="448" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="sans-serif">api.client3.ru ↓</text>
+  <circle cx="150" cy="500" r="3" fill="#6366f1" opacity="0.4"/>
+  <circle cx="700" cy="480" r="2" fill="#6366f1" opacity="0.3"/>
+</svg>

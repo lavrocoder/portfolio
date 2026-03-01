@@ -1,0 +1,16 @@
+{
+  "name": "Евгений Лавров",
+  "headline": "Бэкенд-разработчик",
+  "tagline": "Разрабатываю ботов, API и сервисы, которые решают задачи бизнеса",
+  "heroMetrics": [
+    { "value": "6+", "label": "лет опыта" },
+    { "value": "20+", "label": "завершённых проектов" },
+    { "value": "Python", "label": "основной стек" }
+  ],
+  "contacts": {
+    "email": "hello@example.com",
+    "telegram": "@alexdev_py",
+    "github": "https://github.com/alexdev",
+    "linkedin": "https://linkedin.com/in/alexdev"
+  }
+}

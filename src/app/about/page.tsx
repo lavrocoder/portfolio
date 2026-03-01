@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAbout, getMeta } from '@/lib/content'
+import { assetPath } from '@/lib/asset-path'
 
 export const metadata: Metadata = {
   title: 'Обо мне',
@@ -39,7 +40,7 @@ export default function AboutPage() {
           <div className="lg:col-span-1">
             <div className="aspect-square max-w-xs mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-blue-900/60 to-cyan-900/30 border border-[#252540] flex items-center justify-center overflow-hidden">
               <img
-                src="/assets/about/photo.svg"
+                src={assetPath('/assets/about/photo.svg')}
                 alt={meta.name}
                 className="w-full h-full object-cover"
               />

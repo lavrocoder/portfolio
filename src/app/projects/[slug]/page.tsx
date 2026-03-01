@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getProjects, getProject } from '@/lib/content'
 import MetricCard from '@/components/MetricCard'
+import { assetPath } from '@/lib/asset-path'
 
 interface Props {
   params: { slug: string }
@@ -184,7 +185,7 @@ export default function ProjectPage({ params }: Props) {
             </h2>
             <div className="rounded-xl border border-[#252540] overflow-hidden bg-[#0a0a12]">
               <img
-                src={project.media.architecture}
+                src={assetPath(project.media.architecture)}
                 alt={`Архитектура: ${project.title}`}
                 className="w-full"
               />
@@ -205,7 +206,7 @@ export default function ProjectPage({ params }: Props) {
                   className="rounded-xl border border-[#252540] overflow-hidden bg-[#0a0a12]"
                 >
                   <img
-                    src={src}
+                    src={assetPath(src)}
                     alt={`Скриншот ${i + 1}: ${project.title}`}
                     className="w-full"
                   />

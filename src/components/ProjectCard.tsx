@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Project } from '@/types'
+import { assetPath } from '@/lib/asset-path'
 
 interface ProjectCardProps {
   project: Project
@@ -44,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {/* Cover */}
         <div className={`relative h-48 bg-gradient-to-br ${gradient} overflow-hidden`}>
           <img
-            src={project.media.cover}
+            src={assetPath(project.media.cover)}
             alt={project.title}
             className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
             onError={(e) => {

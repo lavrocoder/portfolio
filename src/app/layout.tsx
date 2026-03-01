@@ -12,8 +12,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Алексей Иванов — Бэкенд-разработчик',
-    default: 'Алексей Иванов — Бэкенд-разработчик',
+    template: '%s | Евгений Лавров — Бэкенд-разработчик',
+    default: 'Евгений Лавров — Бэкенд-разработчик',
   },
   description:
     'Разрабатываю ботов, API и сервисы, которые решают задачи бизнеса. Python, FastAPI, Telegram, PostgreSQL, Docker.',

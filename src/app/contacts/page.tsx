@@ -90,7 +90,7 @@ export default function ContactsPage() {
                 <div>
                   <p className="text-xs text-zinc-500 mb-0.5">GitHub</p>
                   <p className="text-white font-medium group-hover:text-cyan-400 transition-colors">
-                    github.com/alexdev
+                    github.com/lavrocoder
                   </p>
                 </div>
               </a>

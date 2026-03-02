@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2a"/>
+      <stop offset="100%" stop-color="#041515"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Grid overlay -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="98" fill="#e2e8f0" font-size="30" text-anchor="middle" font-family="sans-serif" font-weight="bold">Парсер сайтов</text>
+  <text x="400" y="128" fill="#0d9488" font-size="13" text-anchor="middle" font-family="monospace">Python · PostgreSQL · Web Scraping</text>
+
+  <!-- LEFT: Website pages (3 stacked browser frames) -->
+  <!-- Back frame -->
+  <rect x="52" y="215" width="162" height="118" fill="#061a1a" stroke="#0d9488" stroke-width="1" rx="6" opacity="0.35"/>
+  <!-- Middle frame -->
+  <rect x="66" y="208" width="162" height="118" fill="#061a1a" stroke="#0d9488" stroke-width="1" rx="6" opacity="0.6"/>
+  <!-- Front frame -->
+  <rect x="80" y="200" width="162" height="118" fill="#061a1a" stroke="#0d9488" stroke-width="1.5" rx="6"/>
+  <!-- Browser toolbar -->
+  <rect x="80" y="200" width="162" height="22" fill="#0d9488" opacity="0.2" rx="5"/>
+  <circle cx="94" cy="211" r="3" fill="#0d9488" opacity="0.55"/>
+  <circle cx="106" cy="211" r="3" fill="#0d9488" opacity="0.55"/>
+  <circle cx="118" cy="211" r="3" fill="#0d9488" opacity="0.55"/>
+  <!-- URL bar hint -->
+  <rect x="130" y="206" width="96" height="10" fill="#0d9488" opacity="0.1" rx="2"/>
+  <!-- Content lines -->
+  <rect x="92" y="232" width="128" height="5" fill="#0d9488" opacity="0.2" rx="2"/>
+  <rect x="92" y="243" width="100" height="5" fill="#0d9488" opacity="0.15" rx="2"/>
+  <rect x="92" y="254" width="118" height="5" fill="#0d9488" opacity="0.2" rx="2"/>
+  <rect x="92" y="265" width="80" height="5" fill="#0d9488" opacity="0.12" rx="2"/>
+  <rect x="92" y="280" width="110" height="7" fill="#0d9488" opacity="0.22" rx="2"/>
+  <rect x="92" y="292" width="90" height="7" fill="#0d9488" opacity="0.18" rx="2"/>
+  <!-- Label -->
+  <text x="161" y="352" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="monospace">Сайты</text>
+
+  <!-- Arrow 1: sites → parser -->
+  <line x1="246" y1="262" x2="308" y2="262" stroke="#0d9488" stroke-width="2" opacity="0.65"/>
+  <polygon points="308,258 322,262 308,266" fill="#0d9488" opacity="0.65"/>
+
+  <!-- CENTER: Code block (main.py) -->
+  <rect x="322" y="195" width="188" height="140" fill="#051212" stroke="#0d9488" stroke-width="2" rx="8"/>
+  <!-- Header -->
+  <rect x="322" y="195" width="188" height="26" fill="#0d9488" opacity="0.22" rx="7"/>
+  <text x="416" y="213" fill="#0d9488" font-size="11" text-anchor="middle" font-family="monospace" font-weight="bold">main.py</text>
+  <!-- Code lines -->
+  <text x="334" y="237" fill="#5eead4" font-size="8.5" font-family="monospace">import requests</text>
+  <text x="334" y="251" fill="#5eead4" font-size="8.5" font-family="monospace">from bs4 import BeautifulSoup</text>
+  <text x="334" y="265" fill="#0d9488" font-size="8.5" font-family="monospace">import psycopg2</text>
+  <text x="334" y="279" fill="#5eead4" font-size="8.5" font-family="monospace">from config import DB_CONFIG</text>
+  <text x="334" y="296" fill="#64748b" font-size="8" font-family="monospace">resp = requests.get(url)</text>
+  <text x="334" y="309" fill="#0d9488" font-size="8.5" font-family="monospace">save_to_db(data, conn)</text>
+  <!-- Label -->
+  <text x="416" y="360" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="monospace">Python Parser</text>
+
+  <!-- Arrow 2: parser → db -->
+  <line x1="512" y1="262" x2="568" y2="262" stroke="#0d9488" stroke-width="2" opacity="0.65"/>
+  <polygon points="568,258 582,262 568,266" fill="#0d9488" opacity="0.65"/>
+
+  <!-- RIGHT: PostgreSQL cylinder -->
+  <!-- Bottom ellipse -->
+  <ellipse cx="654" cy="326" rx="68" ry="15" fill="#051212" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Body sides -->
+  <rect x="586" y="220" width="136" height="106" fill="#051212" stroke="none"/>
+  <line x1="586" y1="220" x2="586" y2="326" stroke="#0d9488" stroke-width="1.5"/>
+  <line x1="722" y1="220" x2="722" y2="326" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Top ellipse -->
+  <ellipse cx="654" cy="220" rx="68" ry="15" fill="#061a1a" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Stripe lines inside -->
+  <line x1="588" y1="255" x2="720" y2="255" stroke="#0d9488" stroke-width="0.5" opacity="0.35"/>
+  <line x1="588" y1="280" x2="720" y2="280" stroke="#0d9488" stroke-width="0.5" opacity="0.35"/>
+  <line x1="588" y1="307" x2="720" y2="307" stroke="#0d9488" stroke-width="0.5" opacity="0.35"/>
+  <!-- Labels -->
+  <text x="654" y="356" fill="#0d9488" font-size="12" text-anchor="middle" font-family="monospace" font-weight="bold">PostgreSQL</text>
+  <text x="654" y="372" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="monospace">База данных</text>
+
+  <!-- Decorative particles -->
+  <circle cx="44" cy="88" r="4" fill="#0d9488" opacity="0.22"/>
+  <circle cx="762" cy="118" r="6" fill="#0d9488" opacity="0.15"/>
+  <circle cx="738" cy="474" r="3" fill="#0d9488" opacity="0.28"/>
+  <circle cx="78" cy="508" r="5" fill="#0d9488" opacity="0.18"/>
+  <circle cx="400" cy="518" r="3" fill="#0d9488" opacity="0.25"/>
+  <circle cx="200" cy="168" r="4" fill="#0d9488" opacity="0.18"/>
+  <circle cx="560" cy="160" r="5" fill="#0d9488" opacity="0.15"/>
+
+  <!-- Bottom accent line -->
+  <line x1="290" y1="490" x2="510" y2="490" stroke="#0d9488" stroke-width="1" opacity="0.35"/>
+  <circle cx="290" cy="490" r="3" fill="#0d9488" opacity="0.5"/>
+  <circle cx="510" cy="490" r="3" fill="#0d9488" opacity="0.5"/>
+</svg>

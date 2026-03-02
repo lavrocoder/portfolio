@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420"
+     style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" opacity="0.7"/>
+    </marker>
+    <marker id="arr-back" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" opacity="0.4"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" fill="#0d0d1a"/>
+
+  <!-- Title -->
+  <text x="450" y="36" fill="#94a3b8" font-size="13" text-anchor="middle">Архитектура: Boostra FAQ Bot</text>
+
+  <!-- === Block 1: Клиент === -->
+  <rect x="18" y="155" width="120" height="80" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="78" y="185" fill="#e2e8f0" font-size="13" text-anchor="middle">Клиент</text>
+  <text x="78" y="202" fill="#94a3b8" font-size="10" text-anchor="middle">Telegram-пользователь</text>
+  <text x="78" y="218" fill="#22d3ee" font-size="10" text-anchor="middle">цифра / кнопка</text>
+
+  <!-- Arrow 1 → 2 -->
+  <line x1="138" y1="195" x2="178" y2="195" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="158" y="188" fill="#6b7280" font-size="9" text-anchor="middle">запрос</text>
+
+  <!-- === Block 2: Telegram Bot API === -->
+  <rect x="180" y="155" width="150" height="80" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="255" y="183" fill="#e2e8f0" font-size="13" text-anchor="middle">Telegram</text>
+  <text x="255" y="200" fill="#e2e8f0" font-size="13" text-anchor="middle">Bot API</text>
+  <text x="255" y="220" fill="#818cf8" font-size="10" text-anchor="middle">webhook / polling</text>
+
+  <!-- Arrow 2 → 3 -->
+  <line x1="330" y1="195" x2="373" y2="195" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="351" y="188" fill="#6b7280" font-size="9" text-anchor="middle">update</text>
+
+  <!-- === Block 3: Python Bot (MAIN) === -->
+  <rect x="375" y="140" width="175" height="110" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="2.5"/>
+  <text x="462" y="170" fill="#e2e8f0" font-size="13" text-anchor="middle" font-weight="600">Python Бот</text>
+  <text x="462" y="187" fill="#e2e8f0" font-size="13" text-anchor="middle">boostra-bot</text>
+  <text x="462" y="207" fill="#94a3b8" font-size="10" text-anchor="middle">message handler</text>
+  <text x="462" y="222" fill="#818cf8" font-size="10" text-anchor="middle">Python 3.x</text>
+  <text x="462" y="237" fill="#22d3ee" font-size="10" text-anchor="middle">Telegram Bot API lib</text>
+
+  <!-- Arrow 3 → 4 -->
+  <line x1="550" y1="195" x2="594" y2="195" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="572" y="188" fill="#6b7280" font-size="9" text-anchor="middle">route</text>
+
+  <!-- === Block 4: FAQ Router === -->
+  <rect x="596" y="155" width="155" height="80" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="673" y="181" fill="#e2e8f0" font-size="13" text-anchor="middle">FAQ Router</text>
+  <text x="673" y="198" fill="#94a3b8" font-size="10" text-anchor="middle">маршрут по номеру</text>
+  <text x="673" y="213" fill="#22d3ee" font-size="10" text-anchor="middle">1–11 + кнопки</text>
+  <text x="673" y="228" fill="#6b7280" font-size="9" text-anchor="middle">→ ответ / ссылка</text>
+
+  <!-- Arrow 4 → 5 (response) -->
+  <line x1="751" y1="185" x2="800" y2="185" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- === Block 5: Ответ клиенту === -->
+  <rect x="802" y="155" width="88" height="80" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="846" y="183" fill="#e2e8f0" font-size="11" text-anchor="middle">Ответ</text>
+  <text x="846" y="200" fill="#94a3b8" font-size="9" text-anchor="middle">текст FAQ</text>
+  <text x="846" y="215" fill="#22d3ee" font-size="9" text-anchor="middle">или ссылка</text>
+  <text x="846" y="230" fill="#94a3b8" font-size="9" text-anchor="middle">boostra.ru</text>
+
+  <!-- === Block 6: boostra.ru (external) === -->
+  <rect x="596" y="295" width="155" height="60" rx="8" fill="#040f1a" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="673" y="320" fill="#f59e0b" font-size="12" text-anchor="middle">boostra.ru</text>
+  <text x="673" y="337" fill="#94a3b8" font-size="10" text-anchor="middle">внешний сайт</text>
+  <text x="673" y="348" fill="#6b7280" font-size="9" text-anchor="middle">заявка на заём</text>
+
+  <!-- Arrow FAQ Router → boostra.ru -->
+  <line x1="673" y1="235" x2="673" y2="293" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arr)" opacity="0.5" stroke-dasharray="5,3"/>
+  <text x="690" y="268" fill="#6b7280" font-size="9">«Хочу заём»</text>
+
+  <!-- Back arrow 2 ← 3 (response sent back) -->
+  <line x1="330" y1="207" x2="374" y2="207" stroke="#22d3ee" stroke-width="1" marker-end="url(#arr-back)" opacity="0.4" stroke-dasharray="5,3"/>
+
+  <!-- Bottom annotations -->
+  <text x="255" y="310" fill="#374151" font-size="10" text-anchor="middle">polling / webhook</text>
+
+  <text x="462" y="320" fill="#374151" font-size="10" text-anchor="middle">обрабатывает текст</text>
+  <text x="462" y="333" fill="#374151" font-size="10" text-anchor="middle">и нажатия кнопок</text>
+
+  <text x="673" y="375" fill="#f59e0b" font-size="9" text-anchor="middle">внешняя ссылка</text>
+
+  <!-- Decorative dots -->
+  <circle cx="20" cy="60" r="3" fill="#22d3ee" opacity="0.15"/>
+  <circle cx="880" cy="60" r="3" fill="#22d3ee" opacity="0.15"/>
+  <circle cx="20" cy="390" r="3" fill="#22d3ee" opacity="0.15"/>
+  <circle cx="880" cy="390" r="3" fill="#22d3ee" opacity="0.15"/>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420"
+     style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1" opacity="0.7"/>
+    </marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#818cf8" opacity="0.7"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- ===================== БЛОК 1: Excel файл (вход) ===================== -->
+  <rect x="30" y="160" width="140" height="100" rx="8" fill="#0f1f30" stroke="#6366f1" stroke-width="1.5"/>
+  <!-- Шапка xlsx -->
+  <rect x="30" y="160" width="140" height="28" rx="8" fill="#1e3a5f"/>
+  <rect x="30" y="176" width="140" height="12" fill="#1e3a5f"/>
+  <text x="100" y="179" font-family="'Inter', sans-serif" font-size="11" fill="#6366f1" text-anchor="middle" font-weight="600">Excel / XLSX</text>
+  <!-- Строки таблицы -->
+  <line x1="38" y1="200" x2="162" y2="200" stroke="#94a3b8" stroke-width="0.8" opacity="0.3"/>
+  <line x1="38" y1="212" x2="162" y2="212" stroke="#94a3b8" stroke-width="0.8" opacity="0.3"/>
+  <line x1="38" y1="224" x2="162" y2="224" stroke="#94a3b8" stroke-width="0.8" opacity="0.3"/>
+  <line x1="80" y1="192" x2="80" y2="252" stroke="#94a3b8" stroke-width="0.8" opacity="0.3"/>
+  <text x="55" y="201" font-size="8" fill="#94a3b8" opacity="0.7" text-anchor="middle">№</text>
+  <text x="120" y="201" font-size="8" fill="#94a3b8" opacity="0.7" text-anchor="middle">Данные</text>
+  <text x="55" y="213" font-size="8" fill="#e2e8f0" opacity="0.6" text-anchor="middle">1</text>
+  <text x="120" y="213" font-size="8" fill="#e2e8f0" opacity="0.5" text-anchor="middle">ABC123...</text>
+  <text x="55" y="225" font-size="8" fill="#e2e8f0" opacity="0.6" text-anchor="middle">2</text>
+  <text x="120" y="225" font-size="8" fill="#e2e8f0" opacity="0.5" text-anchor="middle">XYZ456...</text>
+  <text x="55" y="237" font-size="8" fill="#e2e8f0" opacity="0.4" text-anchor="middle">3</text>
+  <text x="120" y="237" font-size="8" fill="#e2e8f0" opacity="0.4" text-anchor="middle">DEF789...</text>
+  <text x="100" y="252" font-size="9" fill="#94a3b8" opacity="0.5" text-anchor="middle">input.xlsx</text>
+  <!-- Лейбл -->
+  <text x="100" y="275" font-size="11" fill="#94a3b8" text-anchor="middle" opacity="0.7">Входные данные</text>
+
+  <!-- Стрелка от Excel → Python скрипт -->
+  <line x1="170" y1="210" x2="250" y2="210" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="210" y="204" font-size="9" fill="#6366f1" text-anchor="middle" opacity="0.6">читает</text>
+
+  <!-- ===================== БЛОК 2: Python скрипт (центр) ===================== -->
+  <rect x="250" y="120" width="180" height="180" rx="8" fill="#0f1f30" stroke="#6366f1" stroke-width="2.5"/>
+  <text x="340" y="148" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">Python Script</text>
+  <text x="340" y="163" font-size="10" fill="#6366f1" text-anchor="middle">barcode_generator.py</text>
+
+  <!-- Шаги внутри -->
+  <rect x="262" y="173" width="156" height="22" rx="4" fill="#1a1a3a" stroke="#6366f1" stroke-width="0.8" opacity="0.7"/>
+  <text x="340" y="188" font-size="9" fill="#94a3b8" text-anchor="middle">1. Читает input.xlsx</text>
+
+  <rect x="262" y="200" width="156" height="22" rx="4" fill="#1a1a3a" stroke="#6366f1" stroke-width="0.8" opacity="0.7"/>
+  <text x="340" y="215" font-size="9" fill="#94a3b8" text-anchor="middle">2. Итерация по строкам</text>
+
+  <rect x="262" y="227" width="156" height="22" rx="4" fill="#1a1a3a" stroke="#6366f1" stroke-width="0.8" opacity="0.7"/>
+  <text x="340" y="242" font-size="9" fill="#94a3b8" text-anchor="middle">3. Генерация PDF417</text>
+
+  <rect x="262" y="254" width="156" height="22" rx="4" fill="#1a1a3a" stroke="#6366f1" stroke-width="0.8" opacity="0.7"/>
+  <text x="340" y="269" font-size="9" fill="#94a3b8" text-anchor="middle">4. Сохранение PNG</text>
+
+  <!-- Лейбл Python библиотек -->
+  <text x="340" y="318" font-size="11" fill="#94a3b8" text-anchor="middle" opacity="0.7">Основной модуль</text>
+
+  <!-- Стрелка от Python → PDF417 библиотека -->
+  <line x1="340" y1="120" x2="340" y2="50" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6" stroke-dasharray="5,3"/>
+  <text x="340" y="44" font-size="9" fill="#6366f1" text-anchor="middle" opacity="0.6">использует</text>
+
+  <!-- ===================== БЛОК: Библиотеки (сверху центра) ===================== -->
+  <rect x="240" y="10" width="200" height="28" rx="6" fill="#0f1f30" stroke="#818cf8" stroke-width="1"/>
+  <text x="340" y="28" font-size="10" fill="#818cf8" text-anchor="middle">pdf417 · Pillow · openpyxl</text>
+
+  <!-- Стрелка от Python → EXE -->
+  <line x1="340" y1="300" x2="340" y2="360" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)" opacity="0.5" stroke-dasharray="5,3"/>
+
+  <!-- ===================== БЛОК: PyInstaller EXE (снизу центра) ===================== -->
+  <rect x="255" y="360" width="170" height="46" rx="6" fill="#0f1f30" stroke="#818cf8" stroke-width="1"/>
+  <text x="340" y="378" font-size="11" fill="#e2e8f0" text-anchor="middle" font-weight="600">PyInstaller EXE</text>
+  <text x="340" y="395" font-size="9" fill="#94a3b8" text-anchor="middle">barcode_generator.exe</text>
+  <text x="340" y="420" font-size="10" fill="#94a3b8" text-anchor="middle" opacity="0.6">сборка в автономный файл</text>
+
+  <!-- Стрелка от Python → PNG Output -->
+  <line x1="430" y1="210" x2="510" y2="210" stroke="#818cf8" stroke-width="1.5" marker-end="url(#arr2)" opacity="0.7"/>
+  <text x="470" y="204" font-size="9" fill="#818cf8" text-anchor="middle" opacity="0.6">записывает</text>
+
+  <!-- ===================== БЛОК 3: barcode/ папка ===================== -->
+  <rect x="510" y="160" width="150" height="100" rx="8" fill="#0f1f30" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="585" y="183" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">barcode/</text>
+  <text x="585" y="198" font-size="9" fill="#94a3b8" text-anchor="middle">выходная папка</text>
+  <!-- Файлы -->
+  <text x="585" y="216" font-size="9" fill="#818cf8" text-anchor="middle" opacity="0.9">ru1.png</text>
+  <text x="585" y="229" font-size="9" fill="#818cf8" text-anchor="middle" opacity="0.8">ru2.png</text>
+  <text x="585" y="242" font-size="9" fill="#818cf8" text-anchor="middle" opacity="0.6">ru3.png</text>
+  <text x="585" y="252" font-size="9" fill="#94a3b8" text-anchor="middle" opacity="0.4">…</text>
+  <!-- Лейбл -->
+  <text x="585" y="276" font-size="11" fill="#94a3b8" text-anchor="middle" opacity="0.7">PNG с прозрачным фоном</text>
+
+  <!-- Стрелка от barcode/ → PNG preview -->
+  <line x1="660" y1="210" x2="730" y2="210" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrGreen)" opacity="0.6"/>
+  <text x="695" y="204" font-size="9" fill="#10b981" text-anchor="middle" opacity="0.6">готово</text>
+
+  <!-- ===================== БЛОК 4: Результат / использование ===================== -->
+  <rect x="730" y="150" width="148" height="120" rx="8" fill="#0f1f30" stroke="#10b981" stroke-width="1.5"/>
+  <text x="804" y="173" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">Результат</text>
+  <!-- Список применений -->
+  <text x="740" y="193" font-size="9" fill="#10b981" opacity="0.8">✓ Документы</text>
+  <text x="740" y="208" font-size="9" fill="#10b981" opacity="0.8">✓ Этикетки</text>
+  <text x="740" y="223" font-size="9" fill="#10b981" opacity="0.8">✓ Печать</text>
+  <text x="740" y="238" font-size="9" fill="#10b981" opacity="0.8">✓ Прозрачный фон</text>
+  <text x="804" y="258" font-size="9" fill="#94a3b8" text-anchor="middle" opacity="0.5">PDF417 · 12col · 5:1</text>
+  <!-- Лейбл -->
+  <text x="804" y="284" font-size="11" fill="#94a3b8" text-anchor="middle" opacity="0.7">Готовые штрих-коды</text>
+
+  <!-- ===================== Параметры генерации (аннотация) ===================== -->
+  <rect x="510" y="60" width="150" height="70" rx="6" fill="#0f1f30" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+  <text x="585" y="80" font-size="10" fill="#6366f1" text-anchor="middle" font-weight="600">Параметры</text>
+  <text x="520" y="96" font-size="9" fill="#94a3b8" opacity="0.8">Колонки: 12</text>
+  <text x="520" y="110" font-size="9" fill="#94a3b8" opacity="0.8">Соотношение: 5:1</text>
+  <text x="520" y="124" font-size="9" fill="#94a3b8" opacity="0.8">Фон: прозрачный</text>
+
+  <!-- Стрелка от параметров → Python -->
+  <line x1="510" y1="95" x2="430" y2="150" stroke="#6366f1" stroke-width="1" opacity="0.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+</svg>

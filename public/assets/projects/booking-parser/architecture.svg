@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420"
+     style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0d9488" opacity="0.7"/>
+    </marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="420" fill="#0d0d1a"/>
+  <line x1="0" y1="0" x2="900" y2="0" stroke="#0d9488" stroke-width="2" opacity="0.3"/>
+
+  <!-- ===== БЛОК 1: Пользователь / CLI ===== -->
+  <rect x="30" y="170" width="120" height="70" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="90" y="197" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">Пользователь</text>
+  <text x="90" y="213" font-size="10" fill="#94a3b8" text-anchor="middle">Командная строка</text>
+  <text x="90" y="229" font-size="10" fill="#0d9488" text-anchor="middle">input: N отелей</text>
+
+  <!-- Стрелка 1→2 -->
+  <line x1="150" y1="205" x2="200" y2="205" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- ===== БЛОК 2: Python Script (центральный) ===== -->
+  <rect x="200" y="130" width="170" height="155" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="2.5"/>
+  <text x="285" y="158" font-size="14" fill="#e2e8f0" text-anchor="middle" font-weight="700">Python Parser</text>
+  <text x="285" y="175" font-size="10" fill="#94a3b8" text-anchor="middle">main.py</text>
+  <line x1="210" y1="183" x2="360" y2="183" stroke="#1a3a3a" stroke-width="0.8"/>
+  <text x="285" y="200" font-size="10" fill="#0d9488" text-anchor="middle">get_html(url, params)</text>
+  <text x="285" y="216" font-size="10" fill="#64748b" text-anchor="middle">get_content(html)</text>
+  <text x="285" y="232" font-size="10" fill="#64748b" text-anchor="middle">save_doc(items, path)</text>
+  <text x="285" y="250" font-size="10" fill="#64748b" text-anchor="middle">parser() — основной цикл</text>
+  <line x1="210" y1="258" x2="360" y2="258" stroke="#1a3a3a" stroke-width="0.8"/>
+  <text x="285" y="272" font-size="10" fill="#94a3b8" text-anchor="middle">encoding=utf-8</text>
+
+  <!-- Стрелка 2→Booking (HTTP GET запросы) -->
+  <line x1="370" y1="175" x2="450" y2="120" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="420" y="140" font-size="10" fill="#0d9488" text-anchor="middle">HTTP GET</text>
+  <text x="420" y="153" font-size="10" fill="#64748b" text-anchor="middle">+ offset=N</text>
+
+  <!-- ===== БЛОК 3: Booking.com (внешний) ===== -->
+  <rect x="450" y="60" width="160" height="80" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="530" y="87" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">Booking.com</text>
+  <text x="530" y="104" font-size="10" fill="#94a3b8" text-anchor="middle">/reviews/it/city/venice</text>
+  <text x="530" y="119" font-size="10" fill="#0d9488" text-anchor="middle">HTML страница</text>
+  <text x="530" y="132" font-size="10" fill="#64748b" text-anchor="middle">30 отелей / страница</text>
+
+  <!-- Стрелка Booking → Pagination Handler -->
+  <line x1="530" y1="140" x2="530" y2="185" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7" stroke-dasharray="5,3"/>
+
+  <!-- ===== БЛОК 4: Pagination Handler ===== -->
+  <rect x="450" y="185" width="160" height="80" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="530" y="208" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">Pagination</text>
+  <text x="530" y="225" font-size="10" fill="#94a3b8" text-anchor="middle">pages = ceil(N / 30)</text>
+  <text x="530" y="241" font-size="10" fill="#64748b" text-anchor="middle">offset = page * 30</text>
+  <text x="530" y="257" font-size="10" fill="#0d9488" text-anchor="middle">цикл по страницам</text>
+
+  <!-- Стрелка Parser → BeautifulSoup -->
+  <line x1="370" y1="230" x2="440" y2="230" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7" stroke-dasharray="5,3"/>
+
+  <!-- ===== БЛОК 5: BeautifulSoup ===== -->
+  <rect x="440" y="290" width="160" height="65" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="520" y="314" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">BeautifulSoup</text>
+  <text x="520" y="331" font-size="10" fill="#94a3b8" text-anchor="middle">CSS-селекторы</text>
+  <text x="520" y="347" font-size="10" fill="#0d9488" text-anchor="middle">hotel_name / place / reviews</text>
+
+  <!-- Стрелка 2→CSV -->
+  <line x1="285" y1="285" x2="285" y2="335" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- ===== БЛОК 6: CSV Output ===== -->
+  <rect x="185" y="335" width="200" height="60" rx="8" fill="#0f1f30" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="285" y="360" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">hotels.csv</text>
+  <text x="285" y="378" font-size="10" fill="#94a3b8" text-anchor="middle">Название · Район · Отзывы</text>
+  <text x="285" y="392" font-size="10" fill="#f59e0b" text-anchor="middle">UTF-8 · CSV (разделитель ,)</text>
+
+  <!-- Соединение BeautifulSoup → CSV -->
+  <path d="M 520 355 Q 520 400 390 400 Q 350 400 290 400" stroke="#0d9488" stroke-width="1.2" fill="none" marker-end="url(#arr)" opacity="0.5" stroke-dasharray="5,3"/>
+
+  <!-- Легенда -->
+  <line x1="30" y1="395" x2="60" y2="395" stroke="#0d9488" stroke-width="1.5" opacity="0.7"/>
+  <text x="65" y="399" font-size="10" fill="#64748b">основной поток</text>
+  <line x1="180" y1="395" x2="210" y2="395" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="215" y="399" font-size="10" fill="#64748b">парсинг / обработка</text>
+  <line x1="360" y1="395" x2="390" y2="395" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="395" y="399" font-size="10" fill="#64748b">файловый вывод (CSV)</text>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2a"/>
+      <stop offset="100%" stop-color="#041515"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Сетка-оверлей -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- Code блок — основной визуальный элемент -->
+  <rect x="60" y="120" width="430" height="310" rx="10" fill="#051a1a" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- Заголовок code блока -->
+  <rect x="60" y="120" width="430" height="36" rx="10" fill="#072020"/>
+  <rect x="60" y="144" width="430" height="12" fill="#072020"/>
+  <circle cx="82" cy="138" r="6" fill="#ef4444" opacity="0.7"/>
+  <circle cx="102" cy="138" r="6" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="122" cy="138" r="6" fill="#10b981" opacity="0.7"/>
+  <text x="290" y="143" font-family="'Courier New', monospace" font-size="12" fill="#64748b" text-anchor="middle">booking_parser.py</text>
+
+  <!-- Строки кода -->
+  <text x="80" y="180" font-family="'Courier New', monospace" font-size="12" fill="#64748b">import requests</text>
+  <text x="80" y="198" font-family="'Courier New', monospace" font-size="12" fill="#64748b">from bs4 import BeautifulSoup</text>
+  <text x="80" y="216" font-family="'Courier New', monospace" font-size="12" fill="#64748b">import csv</text>
+  <text x="80" y="244" font-family="'Courier New', monospace" font-size="12" fill="#0d9488">HOST = <tspan fill="#22d3ee">'https://www.booking.com/'</tspan></text>
+  <text x="80" y="270" font-family="'Courier New', monospace" font-size="12" fill="#0d9488">def <tspan fill="#e2e8f0">get_content</tspan>(html):</text>
+  <text x="80" y="288" font-family="'Courier New', monospace" font-size="12" fill="#64748b">  soup = BeautifulSoup(html, <tspan fill="#22d3ee">'html.parser'</tspan>)</text>
+  <text x="80" y="306" font-family="'Courier New', monospace" font-size="12" fill="#64748b">  items = soup.find_all(<tspan fill="#22d3ee">'div'</tspan>,</text>
+  <text x="80" y="322" font-family="'Courier New', monospace" font-size="12" fill="#22d3ee">    class_='rlp-main-hotel__info'</text>
+  <text x="80" y="340" font-family="'Courier New', monospace" font-size="12" fill="#64748b">  <tspan fill="#0d9488">return</tspan> hotels</text>
+  <text x="80" y="366" font-family="'Courier New', monospace" font-size="12" fill="#0d9488">def <tspan fill="#e2e8f0">save_doc</tspan>(items, path):</text>
+  <text x="80" y="384" font-family="'Courier New', monospace" font-size="12" fill="#64748b">  with open(path, <tspan fill="#22d3ee">'w'</tspan>, encoding=<tspan fill="#f59e0b">"utf-8"</tspan>) as f:</text>
+  <text x="80" y="402" font-family="'Courier New', monospace" font-size="12" fill="#94a3b8">    writer.writerow([...])</text>
+
+  <!-- CSV output блок -->
+  <rect x="520" y="140" width="220" height="180" rx="10" fill="#051a1a" stroke="#0d9488" stroke-width="1.5"/>
+  <rect x="520" y="140" width="220" height="32" rx="10" fill="#072020"/>
+  <rect x="520" y="160" width="220" height="12" fill="#072020"/>
+  <text x="630" y="161" font-family="'Courier New', monospace" font-size="11" fill="#0d9488" text-anchor="middle">hotels.csv</text>
+
+  <!-- CSV таблица заголовок -->
+  <rect x="530" y="182" width="200" height="22" fill="#0a2a2a"/>
+  <text x="540" y="197" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#0d9488" font-weight="600">Название отеля</text>
+  <text x="660" y="197" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b">Отзывы</text>
+
+  <!-- CSV строки данных -->
+  <line x1="530" y1="204" x2="730" y2="204" stroke="#0d3030" stroke-width="0.8"/>
+  <text x="540" y="218" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#94a3b8">Hotel Danieli</text>
+  <text x="660" y="218" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b">9.2 / 1240</text>
+  <line x1="530" y1="224" x2="730" y2="224" stroke="#0d3030" stroke-width="0.8"/>
+  <text x="540" y="238" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#94a3b8">Ca' Sagredo</text>
+  <text x="660" y="238" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b">8.9 / 876</text>
+  <line x1="530" y1="244" x2="730" y2="244" stroke="#0d3030" stroke-width="0.8"/>
+  <text x="540" y="258" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#94a3b8">Gritti Palace</text>
+  <text x="660" y="258" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b">9.4 / 2034</text>
+  <line x1="530" y1="264" x2="730" y2="264" stroke="#0d3030" stroke-width="0.8"/>
+  <text x="540" y="278" font-family="'Inter', Arial, sans-serif" font-size="10" fill="#64748b" opacity="0.6">... ещё 47 отелей</text>
+
+  <!-- Стрелка от кода к CSV -->
+  <line x1="495" y1="230" x2="515" y2="230" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.8"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0d9488" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Terminal output внизу справа -->
+  <rect x="520" y="350" width="220" height="90" rx="8" fill="#020d0d" stroke="#0d3030" stroke-width="1"/>
+  <text x="530" y="368" font-family="'Courier New', monospace" font-size="11" fill="#0d9488">$ python main.py</text>
+  <text x="530" y="386" font-family="'Courier New', monospace" font-size="10" fill="#64748b">Укажите кол-во отелей: <tspan fill="#e2e8f0">50</tspan></text>
+  <text x="530" y="402" font-family="'Courier New', monospace" font-size="10" fill="#64748b">Парсим отели: 1-30</text>
+  <text x="530" y="418" font-family="'Courier New', monospace" font-size="10" fill="#64748b">Парсим отели: 31-50</text>
+  <text x="530" y="432" font-family="'Courier New', monospace" font-size="10" fill="#0d9488">Сохранено: hotels.csv ✓</text>
+
+  <!-- Частицы -->
+  <circle cx="760" cy="80" r="4" fill="#0d9488" opacity="0.3"/>
+  <circle cx="740" cy="500" r="3" fill="#0d9488" opacity="0.2"/>
+  <circle cx="780" cy="380" r="5" fill="#0d9488" opacity="0.15"/>
+  <circle cx="42" cy="320" r="4" fill="#0d9488" opacity="0.2"/>
+  <circle cx="30" cy="480" r="6" fill="#0d9488" opacity="0.1"/>
+
+  <!-- Заголовок вверху -->
+  <text x="60" y="76" font-family="'Inter', Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">Парсер отзывов Booking.com</text>
+  <text x="60" y="97" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#64748b">Python · BeautifulSoup · requests · CSV</text>
+
+  <!-- Декоративная линия снизу -->
+  <line x1="60" y1="540" x2="740" y2="540" stroke="#0d9488" stroke-width="1" opacity="0.2"/>
+  <text x="60" y="560" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#334155">Python · BeautifulSoup · 2022</text>
+  <text x="740" y="560" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#0d9488" text-anchor="end">Сбор данных об отелях</text>
+</svg>

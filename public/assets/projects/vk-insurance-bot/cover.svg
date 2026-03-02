@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2744"/>
+      <stop offset="100%" stop-color="#051020"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22d3ee" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Сетка-оверлей -->
+  <g stroke="#22d3ee" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- VK лого-иконка -->
+  <rect x="60" y="50" width="56" height="56" rx="14" fill="#0077FF" opacity="0.9"/>
+  <text x="88" y="87" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">VK</text>
+
+  <!-- Заголовок -->
+  <text x="130" y="76" font-family="'Inter', Arial, sans-serif" font-size="22" fill="#e2e8f0" font-weight="600">VK-бот с ветвлением диалога</text>
+  <text x="130" y="98" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#64748b">Python · VK API · Автоматизация</text>
+
+  <!-- Пузырь входящего сообщения (пользователь) -->
+  <rect x="60" y="145" width="320" height="54" rx="16" fill="#1e3a5f" stroke="#22d3ee" stroke-width="1" opacity="0.85"/>
+  <rect x="60" y="145" width="8" height="8" fill="#1e3a5f"/>
+  <rect x="52" y="185" width="16" height="16" rx="4" fill="#1e3a5f"/>
+  <text x="80" y="167" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#94a3b8">Пользователь:</text>
+  <text x="80" y="186" font-family="'Inter', Arial, sans-serif" font-size="14" fill="#e2e8f0">Хочу вернуть страховку</text>
+
+  <!-- Пузырь ответа бота -->
+  <rect x="420" y="148" width="320" height="54" rx="16" fill="#0f3320" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+  <text x="440" y="170" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#94a3b8">Бот:</text>
+  <text x="440" y="189" font-family="'Inter', Arial, sans-serif" font-size="14" fill="#22d3ee">Понял! Выберите действие:</text>
+
+  <!-- Кнопки бота -->
+  <rect x="420" y="218" width="148" height="36" rx="8" fill="#22d3ee" opacity="0.15" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="494" y="241" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#22d3ee" text-anchor="middle">Подать заявление</text>
+
+  <rect x="582" y="218" width="158" height="36" rx="8" fill="#22d3ee" opacity="0.08" stroke="#22d3ee" stroke-width="0.8" stroke-dasharray="4,2"/>
+  <text x="661" y="241" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Узнать подробнее</text>
+
+  <!-- Пузырь 2: второй диалог -->
+  <rect x="60" y="288" width="260" height="44" rx="14" fill="#1e3a5f" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="80" y="315" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#94a3b8">Хочу получить деньги назад</text>
+
+  <!-- Пузырь 3: ещё один -->
+  <rect x="60" y="350" width="220" height="44" rx="14" fill="#1e3a5f" stroke="#22d3ee" stroke-width="0.8" opacity="0.5"/>
+  <text x="80" y="377" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#64748b">Заявление на возврат</text>
+
+  <!-- Стрелка детекции ключевых слов -->
+  <line x1="328" y1="172" x2="412" y2="172" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- Блок детекции ключевых слов (центр) -->
+  <rect x="230" y="300" width="340" height="100" rx="10" fill="#0a1f35" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+  <text x="400" y="325" font-family="'Inter', Arial, sans-serif" font-size="13" fill="#22d3ee" text-anchor="middle" font-weight="600">Детектор намерений</text>
+  <text x="400" y="345" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">«вернуть» + «деньги» / «страховк»</text>
+  <text x="400" y="362" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">«заявление на возврат» / «заявление об отказе»</text>
+  <text x="400" y="379" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">→ автопереключение ветки диалога</text>
+
+  <!-- Windows Server badge -->
+  <rect x="60" y="430" width="180" height="36" rx="8" fill="#0a1f35" stroke="#334155" stroke-width="1"/>
+  <text x="70" y="453" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#64748b">Windows Server</text>
+  <text x="195" y="453" font-family="'Inter', Arial, sans-serif" font-size="12" fill="#22d3ee">● online</text>
+
+  <!-- Частицы -->
+  <circle cx="680" cy="120" r="4" fill="#22d3ee" opacity="0.3"/>
+  <circle cx="720" cy="280" r="3" fill="#22d3ee" opacity="0.2"/>
+  <circle cx="750" cy="400" r="6" fill="#22d3ee" opacity="0.15"/>
+  <circle cx="640" cy="500" r="3" fill="#22d3ee" opacity="0.25"/>
+  <circle cx="700" cy="560" r="5" fill="#22d3ee" opacity="0.15"/>
+
+  <!-- Декоративная линия снизу -->
+  <line x1="60" y1="540" x2="740" y2="540" stroke="#22d3ee" stroke-width="1" opacity="0.2"/>
+  <text x="60" y="560" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#334155">Python · VK API · 2022</text>
+  <text x="740" y="560" font-family="'Inter', Arial, sans-serif" font-size="11" fill="#22d3ee" text-anchor="end">1 день разработки</text>
+</svg>

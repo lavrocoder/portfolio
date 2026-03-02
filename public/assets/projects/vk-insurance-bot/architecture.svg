@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420"
+     style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22d3ee" opacity="0.7"/>
+    </marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- Фоновые декоративные элементы -->
+  <rect width="900" height="420" fill="#0d0d1a"/>
+  <line x1="0" y1="0" x2="900" y2="0" stroke="#22d3ee" stroke-width="2" opacity="0.3"/>
+
+  <!-- ===== БЛОК 1: Пользователь VK ===== -->
+  <rect x="30" y="155" width="130" height="70" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="95" y="183" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">Пользователь</text>
+  <text x="95" y="200" font-size="10" fill="#94a3b8" text-anchor="middle">VK-группа</text>
+  <text x="95" y="215" font-size="10" fill="#22d3ee" text-anchor="middle">Сообщение / кнопка</text>
+
+  <!-- Стрелка 1→2 -->
+  <line x1="160" y1="190" x2="210" y2="190" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- ===== БЛОК 2: VK API ===== -->
+  <rect x="210" y="155" width="130" height="70" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="275" y="183" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">VK API</text>
+  <text x="275" y="200" font-size="10" fill="#94a3b8" text-anchor="middle">vk_api / longpoll</text>
+  <text x="275" y="215" font-size="10" fill="#22d3ee" text-anchor="middle">Webhook events</text>
+
+  <!-- Стрелка 2→3 -->
+  <line x1="340" y1="190" x2="390" y2="190" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+
+  <!-- ===== БЛОК 3: Python Bot (центральный) ===== -->
+  <rect x="390" y="130" width="160" height="120" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="2.5"/>
+  <text x="470" y="158" font-size="14" fill="#e2e8f0" text-anchor="middle" font-weight="700">Python Bot</text>
+  <text x="470" y="176" font-size="10" fill="#94a3b8" text-anchor="middle">Основной процесс</text>
+  <line x1="400" y1="185" x2="540" y2="185" stroke="#334155" stroke-width="0.8"/>
+  <text x="470" y="200" font-size="10" fill="#22d3ee" text-anchor="middle">Event Loop</text>
+  <text x="470" y="215" font-size="10" fill="#64748b" text-anchor="middle">Message Handler</text>
+  <text x="470" y="230" font-size="10" fill="#64748b" text-anchor="middle">Button Handler</text>
+
+  <!-- Стрелка 3→4 (детектор) -->
+  <line x1="550" y1="165" x2="610" y2="120" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7" stroke-dasharray="5,3"/>
+
+  <!-- ===== БЛОК 4: Детектор ключевых слов ===== -->
+  <rect x="610" y="50" width="160" height="85" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="690" y="74" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">Keyword Detector</text>
+  <text x="690" y="90" font-size="10" fill="#94a3b8" text-anchor="middle">«вернуть» + «деньги»</text>
+  <text x="690" y="105" font-size="10" fill="#94a3b8" text-anchor="middle">«страховка», «заявление»</text>
+  <text x="690" y="120" font-size="10" fill="#22d3ee" text-anchor="middle">→ ветка возврата</text>
+
+  <!-- Стрелка 3→5 (дерево диалога) -->
+  <line x1="550" y1="210" x2="610" y2="230" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7" stroke-dasharray="5,3"/>
+
+  <!-- ===== БЛОК 5: Дерево диалога ===== -->
+  <rect x="610" y="215" width="160" height="85" rx="8" fill="#0f1f30" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="690" y="239" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">Dialog Tree</text>
+  <text x="690" y="255" font-size="10" fill="#94a3b8" text-anchor="middle">Сценарий А (желательный)</text>
+  <text x="690" y="270" font-size="10" fill="#94a3b8" text-anchor="middle">Сценарий Б (нежелательный)</text>
+  <text x="690" y="285" font-size="10" fill="#22d3ee" text-anchor="middle">Кнопочное меню</text>
+
+  <!-- Стрелка обратно к пользователю (ответ) -->
+  <path d="M 390 210 Q 275 280 160 210" stroke="#22d3ee" stroke-width="1.2" fill="none" marker-end="url(#arr)" opacity="0.4" stroke-dasharray="5,3"/>
+  <text x="265" y="275" font-size="10" fill="#64748b" text-anchor="middle">ответ пользователю</text>
+
+  <!-- ===== Windows Server (инфраструктура, снизу) ===== -->
+  <rect x="390" y="310" width="160" height="60" rx="8" fill="#080f18" stroke="#334155" stroke-width="1.5"/>
+  <text x="470" y="335" font-size="12" fill="#64748b" text-anchor="middle" font-weight="600">Windows Server</text>
+  <text x="470" y="352" font-size="10" fill="#334155" text-anchor="middle">Python 3.x · фоновый процесс</text>
+  <text x="470" y="367" font-size="10" fill="#22d3ee" text-anchor="middle">● Работает 24/7</text>
+
+  <!-- Стрелка инфраструктуры -->
+  <line x1="470" y1="310" x2="470" y2="252" stroke="#334155" stroke-width="1" marker-end="url(#arr2)" opacity="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Легенда -->
+  <line x1="30" y1="395" x2="60" y2="395" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="65" y="399" font-size="10" fill="#64748b">основной поток данных</text>
+  <line x1="200" y1="395" x2="230" y2="395" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <text x="235" y="399" font-size="10" fill="#64748b">внутренняя логика</text>
+  <line x1="370" y1="395" x2="400" y2="395" stroke="#334155" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="405" y="399" font-size="10" fill="#64748b">инфраструктура</text>
+</svg>

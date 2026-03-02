@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2a"/>
+      <stop offset="100%" stop-color="#041515"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Сетка-оверлей -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- Три профиля браузера (карточки) -->
+  <!-- Профиль 1 -->
+  <rect x="80" y="160" width="180" height="240" rx="10" fill="#0f2020" stroke="#0d9488" stroke-width="1.5" opacity="0.9"/>
+  <!-- Браузерная хромка -->
+  <rect x="80" y="160" width="180" height="28" rx="10" fill="#0d9488" opacity="0.3"/>
+  <circle cx="100" cy="174" r="5" fill="#ef4444" opacity="0.7"/>
+  <circle cx="118" cy="174" r="5" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="136" cy="174" r="5" fill="#10b981" opacity="0.7"/>
+  <!-- Иконка Discord (упрощённая) -->
+  <ellipse cx="170" cy="248" rx="32" ry="26" fill="#5865f2" opacity="0.8"/>
+  <circle cx="158" cy="245" r="6" fill="#0f2020"/>
+  <circle cx="182" cy="245" r="6" fill="#0f2020"/>
+  <path d="M155 258 Q170 265 185 258" stroke="#0f2020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Proxy label -->
+  <rect x="92" y="295" width="156" height="22" rx="4" fill="#0d9488" opacity="0.15"/>
+  <text x="170" y="311" fill="#0d9488" font-size="11" font-family="monospace" text-anchor="middle">IP: 194.35.12.41</text>
+  <!-- Account label -->
+  <text x="170" y="358" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="middle">account_01</text>
+  <rect x="105" y="370" width="130" height="16" rx="3" fill="#10b981" opacity="0.2"/>
+  <text x="170" y="382" fill="#10b981" font-size="9" font-family="monospace" text-anchor="middle">● Connected</text>
+
+  <!-- Профиль 2 (центр) -->
+  <rect x="310" y="140" width="180" height="260" rx="10" fill="#0f2020" stroke="#0d9488" stroke-width="2" opacity="1"/>
+  <rect x="310" y="140" width="180" height="28" rx="10" fill="#0d9488" opacity="0.4"/>
+  <circle cx="330" cy="154" r="5" fill="#ef4444" opacity="0.7"/>
+  <circle cx="348" cy="154" r="5" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="366" cy="154" r="5" fill="#10b981" opacity="0.7"/>
+  <ellipse cx="400" cy="240" rx="36" ry="29" fill="#5865f2" opacity="0.9"/>
+  <circle cx="387" cy="237" r="7" fill="#0f2020"/>
+  <circle cx="413" cy="237" r="7" fill="#0f2020"/>
+  <path d="M384 252 Q400 260 416 252" stroke="#0f2020" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="322" y="285" width="156" height="22" rx="4" fill="#0d9488" opacity="0.2"/>
+  <text x="400" y="301" fill="#0d9488" font-size="11" font-family="monospace" text-anchor="middle">IP: 82.117.55.09</text>
+  <text x="400" y="340" fill="#e2e8f0" font-size="10" font-family="monospace" text-anchor="middle">account_02</text>
+  <rect x="335" y="352" width="130" height="16" rx="3" fill="#10b981" opacity="0.25"/>
+  <text x="400" y="364" fill="#10b981" font-size="9" font-family="monospace" text-anchor="middle">● Connected</text>
+
+  <!-- Профиль 3 -->
+  <rect x="540" y="160" width="180" height="240" rx="10" fill="#0f2020" stroke="#0d9488" stroke-width="1.5" opacity="0.9"/>
+  <rect x="540" y="160" width="180" height="28" rx="10" fill="#0d9488" opacity="0.3"/>
+  <circle cx="560" cy="174" r="5" fill="#ef4444" opacity="0.7"/>
+  <circle cx="578" cy="174" r="5" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="596" cy="174" r="5" fill="#10b981" opacity="0.7"/>
+  <ellipse cx="630" cy="248" rx="32" ry="26" fill="#5865f2" opacity="0.8"/>
+  <circle cx="618" cy="245" r="6" fill="#0f2020"/>
+  <circle cx="642" cy="245" r="6" fill="#0f2020"/>
+  <path d="M615 258 Q630 265 645 258" stroke="#0f2020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="552" y="295" width="156" height="22" rx="4" fill="#0d9488" opacity="0.15"/>
+  <text x="630" y="311" fill="#0d9488" font-size="11" font-family="monospace" text-anchor="middle">IP: 46.228.91.17</text>
+  <text x="630" y="358" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="middle">account_03</text>
+  <rect x="565" y="370" width="130" height="16" rx="3" fill="#10b981" opacity="0.2"/>
+  <text x="630" y="382" fill="#10b981" font-size="9" font-family="monospace" text-anchor="middle">● Connected</text>
+
+  <!-- Excel label сверху -->
+  <rect x="310" y="56" width="180" height="36" rx="6" fill="#1e3a2a" stroke="#0d9488" stroke-width="1" opacity="0.9"/>
+  <text x="400" y="79" fill="#0d9488" font-size="13" font-family="monospace" text-anchor="middle">accounts.xlsx →</text>
+
+  <!-- Стрелки от Excel к профилям -->
+  <line x1="310" y1="74" x2="230" y2="165" stroke="#0d9488" stroke-width="1" stroke-dasharray="5,3" opacity="0.5"/>
+  <line x1="400" y1="92" x2="400" y2="140" stroke="#0d9488" stroke-width="1.5" opacity="0.6"/>
+  <line x1="490" y1="74" x2="570" y2="165" stroke="#0d9488" stroke-width="1" stroke-dasharray="5,3" opacity="0.5"/>
+
+  <!-- Частицы -->
+  <circle cx="60" cy="100" r="3" fill="#0d9488" opacity="0.3"/>
+  <circle cx="750" cy="80" r="4" fill="#0d9488" opacity="0.2"/>
+  <circle cx="740" cy="500" r="3" fill="#5865f2" opacity="0.3"/>
+  <circle cx="50" cy="480" r="5" fill="#0d9488" opacity="0.15"/>
+  <circle cx="400" cy="540" r="6" fill="#0d9488" opacity="0.1"/>
+
+  <!-- Заголовок -->
+  <text x="400" y="510" fill="#e2e8f0" font-size="18" font-family="'Inter', sans-serif" text-anchor="middle" font-weight="600">Multi-Account Discord Automation</text>
+  <text x="400" y="535" fill="#0d9488" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">ADS Power · Static Proxies · Python</text>
+
+  <!-- Декоративный угловой акцент -->
+  <line x1="0" y1="0" x2="40" y2="0" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="0" x2="0" y2="40" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+  <line x1="800" y1="600" x2="760" y2="600" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+  <line x1="800" y1="600" x2="800" y2="560" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+</svg>

@@ -8,7 +8,7 @@
   "order": 10,
   "tags": {
     "type": ["скрипт", "автоматизация"],
-    "stack": ["JavaScript"],
+    "stack": ["ADS Power", "JavaScript"],
     "industry": ["маркетинг"]
   },
   "brief": "Набор JavaScript-скриптов для автоматизации действий в Twitter через RPA-конструктор браузера AdsPower: лайк, ретвит, подписка с проверкой состояния",

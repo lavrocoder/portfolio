@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420"
+     style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0d9488" opacity="0.7"/>
+    </marker>
+    <marker id="arr-dash" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <!-- Блок: input.csv -->
+  <rect x="30" y="160" width="130" height="80" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="95" y="193" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">input.csv</text>
+  <text x="95" y="211" font-size="10" fill="#94a3b8" text-anchor="middle">Бренд + Артикул</text>
+  <text x="95" y="227" font-size="10" fill="#0d9488" text-anchor="middle">CSV</text>
+
+  <!-- Блок: config.json -->
+  <rect x="30" y="290" width="130" height="80" rx="8" fill="#0f1f30" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="95" y="322" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">config.json</text>
+  <text x="95" y="340" font-size="10" fill="#94a3b8" text-anchor="middle">Настройки</text>
+  <text x="95" y="356" font-size="10" fill="#94a3b8" text-anchor="middle">min/max sleep, proxy</text>
+
+  <!-- Блок: proxies.csv -->
+  <rect x="30" y="50" width="130" height="80" rx="8" fill="#0f1f30" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="95" y="83" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">proxies.csv</text>
+  <text x="95" y="101" font-size="10" fill="#94a3b8" text-anchor="middle">Список прокси</text>
+  <text x="95" y="117" font-size="10" fill="#94a3b8" text-anchor="middle">IP:PORT</text>
+
+  <!-- Центральный блок: parcer.exe -->
+  <rect x="240" y="120" width="180" height="160" rx="10" fill="#071f1f" stroke="#0d9488" stroke-width="2.5"/>
+  <text x="330" y="152" font-size="14" fill="#e2e8f0" text-anchor="middle" font-weight="700">parcer.exe</text>
+  <line x1="255" y1="162" x2="405" y2="162" stroke="#0d9488" stroke-width="0.8" opacity="0.4"/>
+  <text x="330" y="182" font-size="10" fill="#0d9488" text-anchor="middle">Python + requests</text>
+  <text x="330" y="200" font-size="10" fill="#5eead4" text-anchor="middle">Ротация прокси</text>
+  <text x="330" y="218" font-size="10" fill="#5eead4" text-anchor="middle">Random delay</text>
+  <text x="330" y="236" font-size="10" fill="#5eead4" text-anchor="middle">Прогрессивная запись</text>
+  <text x="330" y="257" font-size="9" fill="#94a3b8" text-anchor="middle">PyInstaller → .exe</text>
+  <text x="330" y="272" font-size="9" fill="#94a3b8" text-anchor="middle">UTF-8 encoding</text>
+
+  <!-- Блок: 4garage.ru -->
+  <rect x="510" y="120" width="160" height="80" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="590" y="153" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">4garage.ru</text>
+  <text x="590" y="171" font-size="10" fill="#94a3b8" text-anchor="middle">Каталог автозапчастей</text>
+  <text x="590" y="187" font-size="10" fill="#0d9488" text-anchor="middle">HTTP · парсинг HTML</text>
+
+  <!-- Блок: output.csv -->
+  <rect x="510" y="270" width="160" height="100" rx="8" fill="#0f1f30" stroke="#10b981" stroke-width="1.5"/>
+  <text x="590" y="300" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="600">output.csv</text>
+  <text x="590" y="318" font-size="10" fill="#10b981" text-anchor="middle">Наличие / цена</text>
+  <text x="590" y="334" font-size="10" fill="#10b981" text-anchor="middle">Ссылка на фото</text>
+  <text x="590" y="352" font-size="9" fill="#94a3b8" text-anchor="middle">Прогрессивно</text>
+
+  <!-- Блок: Proxy servers -->
+  <rect x="720" y="100" width="150" height="80" rx="8" fill="#0f1f30" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="795" y="133" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="600">Proxy Servers</text>
+  <text x="795" y="151" font-size="10" fill="#94a3b8" text-anchor="middle">HTTP · ротация</text>
+  <text x="795" y="167" font-size="10" fill="#94a3b8" text-anchor="middle">per_proxy запросов</text>
+
+  <!-- Стрелки: входные данные → парсер -->
+  <line x1="160" y1="200" x2="238" y2="200" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <line x1="160" y1="330" x2="220" y2="280" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)" opacity="0.5"/>
+  <line x1="160" y1="90" x2="220" y2="160" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)" opacity="0.5"/>
+
+  <!-- Стрелка: парсер → 4garage.ru -->
+  <line x1="420" y1="165" x2="508" y2="165" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <!-- Ответ обратно -->
+  <line x1="510" y1="180" x2="422" y2="180" stroke="#0d9488" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)" opacity="0.5"/>
+  <text x="465" y="158" font-size="9" fill="#0d9488" text-anchor="middle" opacity="0.8">GET запрос</text>
+  <text x="465" y="195" font-size="9" fill="#5eead4" text-anchor="middle" opacity="0.6">HTML ответ</text>
+
+  <!-- Стрелка: парсер → proxy -->
+  <line x1="420" y1="150" x2="718" y2="140" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)" opacity="0.4"/>
+  <text x="570" y="130" font-size="9" fill="#94a3b8" text-anchor="middle" opacity="0.5">через прокси</text>
+
+  <!-- Стрелка: парсер → output.csv -->
+  <line x1="420" y1="240" x2="508" y2="300" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+  <text x="465" y="285" font-size="9" fill="#10b981" text-anchor="middle" opacity="0.7">запись результатов</text>
+
+  <!-- Легенда -->
+  <line x1="30" y1="398" x2="55" y2="398" stroke="#0d9488" stroke-width="1.5" opacity="0.7"/>
+  <text x="62" y="402" font-size="9" fill="#94a3b8">основной поток</text>
+  <line x1="160" y1="398" x2="185" y2="398" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.5"/>
+  <text x="192" y="402" font-size="9" fill="#94a3b8">конфигурация</text>
+  <line x1="295" y1="398" x2="320" y2="398" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+  <text x="327" y="402" font-size="9" fill="#94a3b8">запись данных</text>
+</svg>

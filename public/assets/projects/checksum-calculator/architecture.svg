@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" style="background:#0d0d1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0d9488" opacity="0.7"/>
+    </marker>
+    <marker id="arr-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" fill="#0d0d1a"/>
+
+  <!-- Grid overlay -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.04">
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="0" y1="300" x2="900" y2="300"/>
+    <line x1="0" y1="360" x2="900" y2="360"/>
+    <line x1="90" y1="0" x2="90" y2="420"/>
+    <line x1="180" y1="0" x2="180" y2="420"/>
+    <line x1="270" y1="0" x2="270" y2="420"/>
+    <line x1="360" y1="0" x2="360" y2="420"/>
+    <line x1="450" y1="0" x2="450" y2="420"/>
+    <line x1="540" y1="0" x2="540" y2="420"/>
+    <line x1="630" y1="0" x2="630" y2="420"/>
+    <line x1="720" y1="0" x2="720" y2="420"/>
+    <line x1="810" y1="0" x2="810" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="42" font-family="Inter, sans-serif" font-size="15" fill="#e2e8f0" text-anchor="middle" font-weight="600">Архитектура: Скрипт расчёта контрольных цифр</text>
+  <text x="450" y="62" font-family="Inter, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Python · Алгоритм взвешенных сумм · Batch Processing</text>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- BLOCK 1: numbers.txt (input) -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <rect x="40" y="145" width="155" height="110" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="117" y="177" font-family="Inter, sans-serif" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="500">numbers.txt</text>
+  <text x="117" y="196" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Входной файл</text>
+  <line x1="60" y1="210" x2="175" y2="210" stroke="#1a3a50" stroke-width="0.8"/>
+  <text x="117" y="228" font-family="monospace" font-size="10" fill="#0d9488" text-anchor="middle">121314151617</text>
+  <text x="117" y="243" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">212223242526</text>
+  <text x="117" y="255" font-family="monospace" font-size="9" fill="#334155" text-anchor="middle">... (N строк)</text>
+
+  <!-- Arrow 1: numbers.txt → main.py -->
+  <line x1="197" y1="200" x2="283" y2="200" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="240" y="190" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">read lines</text>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- BLOCK 2: main.py (центральный, более толстая рамка) -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <rect x="285" y="100" width="230" height="200" rx="8" fill="#0f1f30" stroke="#0d9488" stroke-width="2"/>
+  <text x="400" y="133" font-family="Inter, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="middle" font-weight="700">main.py</text>
+  <text x="400" y="152" font-family="Inter, sans-serif" font-size="10" fill="#0d9488" text-anchor="middle">Python Script</text>
+  <line x1="305" y1="163" x2="495" y2="163" stroke="#1a3535" stroke-width="0.8"/>
+
+  <!-- Algorithm steps -->
+  <text x="305" y="183" font-family="monospace" font-size="9.5" fill="#94a3b8">1.  Читаем строки из numbers.txt</text>
+  <text x="305" y="200" font-family="monospace" font-size="9.5" fill="#94a3b8">2.  Разбиваем число на цифры</text>
+  <text x="305" y="217" font-family="monospace" font-size="9.5" fill="#94a3b8">3.  Умножаем на веса [13..2]</text>
+  <text x="305" y="234" font-family="monospace" font-size="9.5" fill="#94a3b8">4.  Считаем сумму произведений</text>
+  <text x="305" y="251" font-family="monospace" font-size="9.5" fill="#94a3b8">5.  result = 11 − (Σ % 11)</text>
+  <text x="305" y="268" font-family="monospace" font-size="9.5" fill="#94a3b8">6.  Запись в output.txt построчно</text>
+
+  <!-- Arrow 2: main.py → output.txt -->
+  <line x1="517" y1="200" x2="603" y2="200" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <text x="560" y="190" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">write lines</text>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- BLOCK 3: output.txt -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <rect x="605" y="145" width="155" height="110" rx="8" fill="#0f1f30" stroke="#10b981" stroke-width="1.5"/>
+  <text x="682" y="177" font-family="Inter, sans-serif" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="500">output.txt</text>
+  <text x="682" y="196" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Выходной файл</text>
+  <line x1="625" y1="210" x2="740" y2="210" stroke="#1a3535" stroke-width="0.8"/>
+  <text x="682" y="230" font-family="monospace" font-size="13" fill="#10b981" text-anchor="middle">7</text>
+  <text x="682" y="248" font-family="monospace" font-size="13" fill="#10b981" text-anchor="middle">3</text>
+  <text x="682" y="258" font-family="monospace" font-size="9" fill="#334155" text-anchor="middle">... (N строк)</text>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- BLOCK 4: Граничные случаи (note box, dashed) -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <rect x="760" y="120" width="120" height="155" rx="8" fill="#0f1f30" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5,3" opacity="0.8"/>
+  <text x="820" y="145" font-family="Inter, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle" font-weight="600">Edge Cases</text>
+  <line x1="775" y1="156" x2="865" y2="156" stroke="#f59e0b" stroke-width="0.5" opacity="0.4"/>
+  <text x="820" y="176" font-family="monospace" font-size="9.5" fill="#94a3b8" text-anchor="middle">result = 10</text>
+  <text x="820" y="192" font-family="monospace" font-size="9.5" fill="#10b981" text-anchor="middle">→ digit = 0</text>
+  <line x1="780" y1="204" x2="858" y2="204" stroke="#334155" stroke-width="0.5"/>
+  <text x="820" y="222" font-family="monospace" font-size="9.5" fill="#94a3b8" text-anchor="middle">result = 11</text>
+  <text x="820" y="238" font-family="monospace" font-size="9.5" fill="#10b981" text-anchor="middle">→ digit = 1</text>
+  <line x1="780" y1="250" x2="858" y2="250" stroke="#334155" stroke-width="0.5"/>
+  <text x="820" y="265" font-family="monospace" font-size="9.5" fill="#64748b" text-anchor="middle">else: result % 10</text>
+
+  <!-- Dashed arrow: main.py → edge cases -->
+  <line x1="400" y1="100" x2="400" y2="80" stroke="#f59e0b" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="400" y1="80" x2="820" y2="80" stroke="#f59e0b" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <line x1="820" y1="80" x2="820" y2="118" stroke="#f59e0b" stroke-width="1" marker-end="url(#arr-gray)" opacity="0.4" stroke-dasharray="4,3"/>
+
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <!-- Formula note at bottom -->
+  <!-- ════════════════════════════════════════════════════════════ -->
+  <rect x="40" y="338" width="820" height="56" rx="6" fill="#0f1f30" stroke="#1a2a2a" stroke-width="1"/>
+  <text x="60" y="360" font-family="Inter, sans-serif" font-size="10" fill="#64748b" font-weight="600">Формула:</text>
+  <text x="115" y="360" font-family="monospace" font-size="10" fill="#e2e8f0">digit = 11 − ( Σ(d_i × w_i) % 11 )</text>
+  <text x="380" y="360" font-family="monospace" font-size="10" fill="#64748b">  где w_i ∈ {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2}</text>
+  <text x="60" y="382" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Пример:</text>
+  <text x="115" y="382" font-family="monospace" font-size="10" fill="#0d9488">121314151617</text>
+  <text x="220" y="382" font-family="monospace" font-size="10" fill="#64748b"> → Σ = 202 → 202 % 11 = 4 → 11 − 4 = 7</text>
+  <text x="490" y="382" font-family="monospace" font-size="10" fill="#10b981"> → digit: 7</text>
+</svg>

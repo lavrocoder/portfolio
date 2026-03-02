@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2a"/>
+      <stop offset="100%" stop-color="#041515"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2e2e"/>
+      <stop offset="100%" stop-color="#071a1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Grid overlay -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- Code editor block -->
+  <rect x="55" y="95" width="450" height="330" rx="10" fill="url(#blockGrad)" stroke="#0d9488" stroke-width="1.5"/>
+
+  <!-- Editor header -->
+  <rect x="55" y="95" width="450" height="36" rx="10" fill="#0d3535"/>
+  <rect x="55" y="116" width="450" height="15" fill="#0d3535"/>
+
+  <!-- Window controls -->
+  <circle cx="80" cy="113" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="98" cy="113" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="116" cy="113" r="5" fill="#10b981" opacity="0.8"/>
+  <text x="142" y="117" font-family="monospace" font-size="11" fill="#64748b">main.py</text>
+
+  <!-- Line numbers -->
+  <g fill="#334155" font-family="monospace" font-size="11">
+    <text x="72" y="157">1</text>
+    <text x="72" y="179">2</text>
+    <text x="72" y="201">3</text>
+    <text x="72" y="223">4</text>
+    <text x="72" y="245">5</text>
+    <text x="72" y="267">6</text>
+    <text x="72" y="289">7</text>
+    <text x="72" y="311">8</text>
+    <text x="72" y="333">9</text>
+    <text x="66" y="355">10</text>
+  </g>
+
+  <!-- Line divider -->
+  <line x1="90" y1="131" x2="90" y2="420" stroke="#1a3535" stroke-width="1"/>
+
+  <!-- Code content -->
+  <text x="100" y="157" font-family="monospace" font-size="11" fill="#64748b">with open("numbers.txt") as f:</text>
+  <text x="100" y="179" font-family="monospace" font-size="11" fill="#64748b">    lines = f.read().splitlines()</text>
+  <text x="100" y="201" font-family="monospace" font-size="11" fill="#94a3b8"> </text>
+  <text x="100" y="223" font-family="monospace" font-size="11" fill="#0d9488">def</text>
+  <text x="135" y="223" font-family="monospace" font-size="11" fill="#e2e8f0">check_digit(num):</text>
+  <text x="100" y="245" font-family="monospace" font-size="11" fill="#64748b">    digits = [int(c) </text>
+  <text x="267" y="245" font-family="monospace" font-size="11" fill="#0d9488">for</text>
+  <text x="293" y="245" font-family="monospace" font-size="11" fill="#64748b"> c </text>
+  <text x="315" y="245" font-family="monospace" font-size="11" fill="#0d9488">in</text>
+  <text x="333" y="245" font-family="monospace" font-size="11" fill="#64748b"> num]</text>
+  <text x="100" y="267" font-family="monospace" font-size="11" fill="#64748b">    weights = range(13, 1, -1)</text>
+  <text x="100" y="289" font-family="monospace" font-size="11" fill="#64748b">    total = sum(d * w </text>
+  <text x="100" y="311" font-family="monospace" font-size="11" fill="#64748b">        </text>
+  <text x="100" y="311" font-family="monospace" font-size="11" fill="#0d9488">        for</text>
+  <text x="135" y="311" font-family="monospace" font-size="11" fill="#64748b"> d, w </text>
+  <text x="179" y="311" font-family="monospace" font-size="11" fill="#0d9488">in</text>
+  <text x="196" y="311" font-family="monospace" font-size="11" fill="#64748b"> zip(digits, weights))</text>
+  <text x="100" y="333" font-family="monospace" font-size="11" fill="#64748b">    result = 11 - (total % 11)</text>
+  <text x="100" y="355" font-family="monospace" font-size="11" fill="#0d9488">    return</text>
+  <text x="155" y="355" font-family="monospace" font-size="11" fill="#e2e8f0"> 0 </text>
+  <text x="171" y="355" font-family="monospace" font-size="11" fill="#0d9488">if</text>
+  <text x="188" y="355" font-family="monospace" font-size="11" fill="#64748b"> result == 10 </text>
+  <text x="279" y="355" font-family="monospace" font-size="11" fill="#0d9488">else</text>
+  <text x="309" y="355" font-family="monospace" font-size="11" fill="#64748b"> result % 10</text>
+
+  <!-- Separator line inside code block -->
+  <line x1="75" y1="370" x2="490" y2="370" stroke="#0d9488" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Status line -->
+  <text x="100" y="392" font-family="monospace" font-size="11" fill="#0d9488">✓ 1000+ строк за &lt;1 сек  |  граничные случаи обработаны</text>
+
+  <!-- File flow panel on the right -->
+  <!-- INPUT file -->
+  <rect x="552" y="130" width="105" height="100" rx="8" fill="#0f2e2e" stroke="#0d9488" stroke-width="1.5"/>
+  <!-- File fold -->
+  <polygon points="627,130 657,130 657,155 627,155" fill="#0d3535"/>
+  <polygon points="627,130 657,155 627,155" fill="#0a2828"/>
+  <text x="604" y="170" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">numbers.txt</text>
+  <text x="604" y="188" font-family="monospace" font-size="10" fill="#0d9488" text-anchor="middle">121314151617</text>
+  <text x="604" y="204" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">212223242526</text>
+  <text x="604" y="218" font-family="monospace" font-size="9" fill="#334155" text-anchor="middle">...</text>
+
+  <!-- Arrow down -->
+  <line x1="604" y1="238" x2="604" y2="285" stroke="#0d9488" stroke-width="2" opacity="0.8"/>
+  <polygon points="597,280 604,294 611,280" fill="#0d9488" opacity="0.8"/>
+
+  <!-- Process badge -->
+  <rect x="560" y="296" width="88" height="36" rx="6" fill="#0d9488" opacity="0.15" stroke="#0d9488" stroke-width="1.5"/>
+  <text x="604" y="318" font-family="monospace" font-size="12" fill="#0d9488" text-anchor="middle" font-weight="bold">main.py</text>
+
+  <!-- Arrow down -->
+  <line x1="604" y1="340" x2="604" y2="385" stroke="#0d9488" stroke-width="2" opacity="0.8"/>
+  <polygon points="597,380 604,394 611,380" fill="#0d9488" opacity="0.8"/>
+
+  <!-- OUTPUT file -->
+  <rect x="552" y="396" width="105" height="95" rx="8" fill="#0f2e2e" stroke="#10b981" stroke-width="1.5"/>
+  <polygon points="627,396 657,396 657,421 627,421" fill="#0d3535"/>
+  <polygon points="627,396 657,421 627,421" fill="#0a2828"/>
+  <text x="604" y="437" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">output.txt</text>
+  <text x="604" y="456" font-family="monospace" font-size="13" fill="#10b981" text-anchor="middle">7</text>
+  <text x="604" y="473" font-family="monospace" font-size="13" fill="#10b981" text-anchor="middle">3</text>
+  <text x="604" y="484" font-family="monospace" font-size="9" fill="#334155" text-anchor="middle">...</text>
+
+  <!-- Decorative circles -->
+  <circle cx="730" cy="70" r="65" fill="none" stroke="#0d9488" stroke-width="1" opacity="0.08"/>
+  <circle cx="730" cy="70" r="40" fill="none" stroke="#0d9488" stroke-width="0.8" opacity="0.12"/>
+  <circle cx="730" cy="70" r="18" fill="#0d9488" opacity="0.07"/>
+
+  <!-- Particles -->
+  <circle cx="48" cy="200" r="4" fill="#0d9488" opacity="0.3"/>
+  <circle cx="530" cy="68" r="3" fill="#0d9488" opacity="0.25"/>
+  <circle cx="690" cy="480" r="5" fill="#0d9488" opacity="0.2"/>
+  <circle cx="42" cy="430" r="6" fill="#0d9488" opacity="0.15"/>
+  <circle cx="540" cy="520" r="4" fill="#10b981" opacity="0.2"/>
+  <circle cx="755" cy="310" r="3" fill="#0d9488" opacity="0.3"/>
+  <circle cx="775" cy="200" r="5" fill="#0d9488" opacity="0.12"/>
+
+  <!-- Title block -->
+  <text x="55" y="470" font-family="sans-serif" font-size="21" font-weight="bold" fill="#e2e8f0">Расчёт контрольных цифр</text>
+  <text x="55" y="494" font-family="sans-serif" font-size="12" fill="#64748b">Python · Алгоритм взвешенных сумм · Batch Processing</text>
+
+  <!-- Bottom accent line -->
+  <line x1="55" y1="508" x2="310" y2="508" stroke="#0d9488" stroke-width="2" opacity="0.6"/>
+  <line x1="318" y1="508" x2="380" y2="508" stroke="#0d9488" stroke-width="2" opacity="0.25"/>
+</svg>

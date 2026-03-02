@@ -52,7 +52,7 @@ The pattern is: server page reads JSON → passes typed props to a client compon
 To find the next available `order` number:
 
 ```bash
-grep '"order"' content/projects/*.json
+node scripts/max-order.js
 ```
 
 ### Project JSON Schema

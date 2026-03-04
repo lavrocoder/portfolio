@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2a"/>
+      <stop offset="100%" stop-color="#041515"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Сетка -->
+  <g stroke="#0d9488" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="0" x2="800" y2="0"/>
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="0" y1="0" x2="0" y2="600"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+  </g>
+
+  <!-- Code-блок с endpoint-строками -->
+  <rect x="120" y="140" width="280" height="200" fill="#071f1f" stroke="#0d9488" stroke-width="1.5" rx="8"/>
+  <rect x="140" y="170" width="200" height="12" fill="#0d9488" opacity="0.6"/>
+  <rect x="140" y="195" width="160" height="10" fill="#0d9488" opacity="0.4"/>
+  <rect x="140" y="215" width="180" height="10" fill="#0d9488" opacity="0.4"/>
+  <rect x="140" y="235" width="140" height="10" fill="#0d9488" opacity="0.4"/>
+  <rect x="140" y="270" width="120" height="10" fill="#0d9488" opacity="0.3"/>
+  <rect x="140" y="290" width="150" height="10" fill="#0d9488" opacity="0.3"/>
+
+  <!-- Database icon -->
+  <rect x="480" y="200" width="140" height="120" fill="#071f1f" stroke="#0d9488" stroke-width="1.5" rx="8"/>
+  <ellipse cx="550" cy="230" rx="50" ry="15" fill="#0d9488" opacity="0.3"/>
+  <rect x="500" y="230" width="100" height="60" fill="#0d9488" opacity="0.1"/>
+  <ellipse cx="550" cy="290" rx="50" ry="15" fill="#0d9488" opacity="0.3"/>
+  <rect x="520" y="250" width="60" height="8" fill="#0d9488" opacity="0.5"/>
+  <rect x="520" y="265" width="60" height="8" fill="#0d9488" opacity="0.5"/>
+
+  <!-- Стрелка между блоками -->
+  <line x1="400" y1="240" x2="480" y2="240" stroke="#0d9488" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Частицы -->
+  <circle cx="100" cy="80" r="4" fill="#0d9488" opacity="0.3"/>
+  <circle cx="250" cy="50" r="6" fill="#0d9488" opacity="0.2"/>
+  <circle cx="450" cy="100" r="3" fill="#0d9488" opacity="0.25"/>
+  <circle cx="650" cy="70" r="5" fill="#0d9488" opacity="0.3"/>
+  <circle cx="720" cy="150" r="4" fill="#0d9488" opacity="0.2"/>
+  <circle cx="150" cy="450" r="5" fill="#0d9488" opacity="0.25"/>
+  <circle cx="350" cy="480" r="3" fill="#0d9488" opacity="0.2"/>
+  <circle cx="550" cy="420" r="6" fill="#0d9488" opacity="0.3"/>
+
+  <!-- Декоративный акцент -->
+  <path d="M 600 380 L 680 380 L 680 460" stroke="#0d9488" stroke-width="2" fill="none" opacity="0.4"/>
+  <circle cx="680" cy="380" r="6" fill="#0d9488" opacity="0.5"/>
+
+  <!-- Стрелка маркер -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0d9488" opacity="0.7"/>
+    </marker>
+  </defs>
+</svg>
